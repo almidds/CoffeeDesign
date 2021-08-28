@@ -1,0 +1,271 @@
+:root{
+    --nav-color: black;
+    --nav-color-select: rgb(235, 222, 204);
+    --background-color: rgb(202, 175, 137);
+    --background-color2: rgb(175, 151, 117);
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    background-color: var(--background-color); 
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);box-shadow: 5px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--nav-color-select);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 7%;
+    text-align: center;
+    font-size: 2vh;
+    color: var(--nav-color-select);
+    user-select: none;
+    
+}
+.shopping{
+    height: 6vh;
+    width: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--nav-color-select);
+    margin: 2%;
+    margin-left: auto;
+}
+.nav-link:hover{
+    animation-name: color-in;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+.welcome{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+    margin-top:8vh;
+    height: 75vh;
+    background-color: var(--background-color);
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-auto-rows: 350px;
+}
+.info{
+    text-decoration: none;
+    color: black;
+    font-family: "Gafata";
+    font-size: 100%;
+    font-weight: bold;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);box-shadow: 5px;
+}
+.info #title{
+    height: 10%;
+    text-align: center;
+    width: 100%;
+    background-color: var(--background-color2);
+    padding-top: 2%;
+    margin:0;
+}.info #desc{
+    opacity: 0;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color2);
+    animation-name: highlightout;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+.info #desc p{
+    margin: 10px;
+}
+.info:hover #desc{
+    animation-name: highlightin;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+#history{
+    background-image: url(/cafeimportsyemen-5.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+#about{
+    background-image: url(/coffeeSetup.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+.welcome img{
+    height: 50vh;
+}
+.welcome div{
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.welcome p{
+    font-family: "Gafata";
+    text-align: center;
+    margin-top: 10vh;
+    font-style: italic;
+    font-size: 3vh;
+}
+.title{
+    
+    margin-bottom: 0%;
+    margin-right: 2vw;
+    font-family: "Abril Fatface";
+    font-size: 15vh;
+    font-weight: bold;
+}
+.footer{
+    
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 20vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: var(--nav-color-select);
+}
+.design{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    height: 5vh;
+    position: relative;
+    color: var(--nav-color-select);
+
+
+}
+.design div{
+    align-self:center;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: var(--background-color2);
+    border-top: 0.8;
+    width: 76%;
+}
+.design p{
+    padding-left: 1vw;
+}
+.contacts{
+    margin-left: 30px;
+    padding-top: 1vh;
+}
+.contact{
+    text-decoration: none;
+    color: var(--nav-color-select);
+    height: 28%;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+.contact:hover{
+    animation-name: border-color-in;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+.contact p{
+    margin-left: 5px;
+    user-select: none;
+}
+.contact span{
+    user-select: none;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.ramble{
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: rgb(41, 41, 41);
+    border-top: 0.8;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gafata";
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-self: center;
+}
+.ramble h1{
+    font-size: 5vh;
+}
+.ramble h2{
+    font-size: 2.7vh;
+}
+@keyframes color-in {
+    0%{
+      background-color: var(--nav-color);
+      color: var(--nav-color-select);
+    }
+    100% {
+      background-color: var(--nav-color-select);
+      color:var(--nav-color);
+      text-shadow: 0px 0px var(--nav-color);
+    }
+  }
+@keyframes border-color-in {
+    0%{
+      border-color: black;
+    }
+    100% {
+      border-color: var(--background-color);
+    }
+  }
+  @keyframes highlightin {
+    0%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  @keyframes highlightout {
+    0%{
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
