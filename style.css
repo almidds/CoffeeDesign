@@ -101,6 +101,9 @@ body{
 }
 .info #desc p{
     margin: 10px;
+    border-left:1em solid transparent;
+    border-right:1em solid transparent;
+    text-overflow: ellipsis;
 }
 .info:hover #desc{
     animation-name: highlightin;
@@ -108,12 +111,12 @@ body{
     animation-fill-mode: forwards;
 }
 #history{
-    background-image: url(/cafeimportsyemen-5.png);
+    background-image: url(./cafeimportsyemen-5.png);
     background-size: 100% auto;
     background-position: center;
 }
 #about{
-    background-image: url(/coffeeSetup.png);
+    background-image: url(./coffeeSetup.png);
     background-size: 100% auto;
     background-position: center;
 }
